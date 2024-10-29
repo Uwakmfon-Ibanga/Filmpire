@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.hd-hero {
+    background-image: url(/assets/movie2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.hd-hero::after {
+    content: '';
+    background-color: black;
+    opacity: 0.5;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+    align-items: end;
+}
+.movie-details {
+    width: 30%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: end;
+    gap: 8px;
+    padding-left: 2%;
+}
+.movie-details img {
+    width: 80px;
+}
+.movie-details h1 {
+    font-size: 40px;
+}
+.movie-details h3 {
+    font-size: 25px;
+}
+.movie-details p {
+    font-size: 15px;
+}
+.movie-details button{
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    width: 5rem;
+}
+.description {
+    display: grid;
+    gap: 5px;
+    border-color: black;
+}
+.film-type {
+    height: fit-content;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: end;
+    gap: 5px;
+    border-left: 2px solid gray;
+    padding: 10px;
+}
